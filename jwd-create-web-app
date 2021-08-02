@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+G_ID=$1
+A_ID=$2
+
+mvn archetype:generate -DgroupId=$G_ID \
+-DartifactId=$A_ID \
+-DarchetypeArtifactId=maven-archetype-webapp \
+-DinteractiveMode=false 
