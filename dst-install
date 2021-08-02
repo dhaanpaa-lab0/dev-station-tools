@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+rm ~/bin/dst-install
+ln -s $(pwd)/dst-install ~/bin/dst-install
+
+
