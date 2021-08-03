@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+if [ -f ./dst-install ]; then
+  git pull
+  ./dst-install
+fi
+

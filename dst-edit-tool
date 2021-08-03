@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+APP=$1
+DSTP=$HOME/bin/dst-install
+DSTD=`dirname $(readlink $HOME/bin/dst-install)`
+
+if [ -f $HOME/bin/dst-install ]; then
+  cd $DSTD
+  touch $APP
+  chmod -v a+x $APP
+  vim $APP
+  LINE="installtodevbin $1"
+  FILE="$HOME/bin/dst-install"
+  grep -qF -- "$LINE" "$FILE" || echo "$LINE" >> "$FILE"
+fi

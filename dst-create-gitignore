@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+if [ -d .git ]; then
+  curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ > .gitignore
+fi

@@ -1,6 +1,21 @@
 #!/usr/bin/env bash
 
-rm ~/bin/dst-install
-ln -s $(pwd)/dst-install ~/bin/dst-install
+installtodevbin () {
+  APP=$1
+  if [ -f $(pwd)/$APP ]; then
+    if [ -f $HOME/bin/$APP ]; then
+      rm -v $HOME/bin/$APP
+    fi
+    ln -sv $(pwd)/$APP $HOME/bin/$APP
+  else
+    echo "App Not Found '$APP' ..." 
+  fi
+}
 
+installtodevbin dst-install
+installtodevbin dst-update
+installtodevbin jwd-create-web-app
 
+installtodevbin dst-edit-tool
+installtodevbin dst-create-gitignore
+installtodevbin dst-list-gitignoreio-types

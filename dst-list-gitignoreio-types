@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+curl -sLw n https://www.toptal.com/developers/gitignore/api/list | sed -e "s/,/\n/g"
+
