@@ -21,3 +21,4 @@ installtodevbin dst-create-gitignore
 installtodevbin dst-list-gitignoreio-types
 installtodevbin foa-create-react
 installtodevbin fba-create-dotnet-app
+installtodevbin dst-install-rvm
