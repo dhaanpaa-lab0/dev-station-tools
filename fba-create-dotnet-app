@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+APPFW=net5.0
+APPPROJ=$1
+APPSLNNAME=`echo $APPPROJ | sed -e "s/\./-/g" | tr A-Z a-z`
+mkdir -pv $APPSLNNAME
+cd $APPSLNNAME
+dotnet new sln 
+dotnet new web -n $APPPROJ.Backend -f $APPFW
+dotnet sln add $APPPROJ.Backend
+dotnet new web -n $APPPROJ.Web -f $APPFW
+dotnet sln add $APPPROJ.Web
+dotnet new classlib -n $APPPROJ.Models
+dotnet sln add $APPPROJ.Models
+git init
+dst-create-gitignore visualstudio,visualstudiocode,rider+all,node,webstorm+all
+git commit -a -m "Setup Project"
+

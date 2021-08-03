@@ -5,7 +5,11 @@ DSTD=`dirname $(readlink $HOME/bin/dst-install)`
 
 if [ -f $HOME/bin/dst-install ]; then
   cd $DSTD
-  touch $APP
+  if [ ! -f $APP ]; then
+    echo "Creating APP $APP .... "
+    touch $APP
+    echo "#!/usr/bin/env bash" > $APP
+  fi
   chmod -v a+x $APP
   vim $APP
   LINE="installtodevbin $1"
