@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+APP=$1
+
+if [ -z "$APP" ]; then
+  echo "Required: appname"
+  exit 1
+fi
+
+mkdir -pv $APP
+cd $APP
+git init
+npx create-react-app frontend 
+dst-create-gitignore webstorm+all,visualstudiocode,node
+cat frontend/.gitignore >> .gitignore
+mkdir -pv backend
+touch backend/.gitkeep
+
+

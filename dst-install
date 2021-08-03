@@ -19,3 +19,4 @@ installtodevbin jwd-create-web-app
 installtodevbin dst-edit-tool
 installtodevbin dst-create-gitignore
 installtodevbin dst-list-gitignoreio-types
+installtodevbin foa-create-react
