@@ -5,12 +5,17 @@ APPSLNNAME=`echo $APPPROJ | sed -e "s/\./-/g" | tr A-Z a-z`
 mkdir -pv $APPSLNNAME
 cd $APPSLNNAME
 dotnet new sln 
-dotnet new web -n $APPPROJ.Web -f $APPFW
-dotnet sln add $APPPROJ.Web
+dotnet new web -n $APPPROJ -f $APPFW
+dotnet sln add $APPPROJ
 dotnet new classlib -n $APPPROJ.Models
 dotnet sln add $APPPROJ.Models
 dotnet new classlib -n $APPPROJ.DataAccess
 dotnet sln add $APPPROJ.DataAccess
+dotnet new classlib -n $APPPROJ.Security
+dotnet sln add $APPPROJ.Security
+dotnet new classlib -n $APPPROJ.BusinessLogic
+dotnet sln add $APPPROJ.BusinessLogic
+
 git init
 dst-create-gitignore visualstudio,visualstudiocode,rider+all,node,webstorm+all
 git commit -a -m "Setup Project"
