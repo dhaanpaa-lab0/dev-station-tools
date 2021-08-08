@@ -34,3 +34,9 @@ installtodevbin aer-docker-login
 installtodevbin aer-docker-tag
 installtodevbin aer-docker-push
 installtodevbin aer-docker-build
+installtodevbin aws-ecr-login
+installtodevbin aws-list-images-in-repo
+installtodevbin aws-list-repos
+installtodevbin aws-list-repourls
+installtodevbin aws-pull-image
+installtodevbin aws-push-image

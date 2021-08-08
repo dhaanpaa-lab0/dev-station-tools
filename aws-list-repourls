@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+aws-list-repos  | jq '.repositories[].repositoryUri'
+

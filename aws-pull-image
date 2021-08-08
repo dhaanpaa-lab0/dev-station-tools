@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+ACCOUNT_ID=298193180533
+IMAGE=$1
+IMAGE_TAG=$2
+docker pull $ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/$IMAGE:$IMAGE_TAG
+docker tag $ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/$IMAGE:$IMAGE_TAG $IMAGE
