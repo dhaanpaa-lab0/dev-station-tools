@@ -23,3 +23,4 @@ installtodevbin foa-create-react
 installtodevbin fba-create-dotnet-app
 installtodevbin dst-install-rvm
 installtodevbin fba-create-dotnet-api
+installtodevbin dst-copy-ssh-key
