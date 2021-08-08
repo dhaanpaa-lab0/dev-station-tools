@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+if [ -f ./Dockerfile ]; then
+  docker build -t $1 .
+fi

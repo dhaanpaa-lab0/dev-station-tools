@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+AWSID=`aws sts get-caller-identity --query Account --output text`
+AWSRP=$1
+
+aws ecr create-repository --repository-name $AWSRP --image-tag-mutability IMMUTABLE
+

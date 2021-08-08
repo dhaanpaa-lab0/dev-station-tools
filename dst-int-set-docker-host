@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+DOCKER_HOST=ssh://denadmin@$1 
+export DOCKER_HOST

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+AWSID=`aws sts get-caller-identity --query Account --output text`
+aws ecr describe-repositories
+

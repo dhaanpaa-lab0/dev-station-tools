@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+docker push 298193180533.dkr.ecr.us-east-1.amazonaws.com/$DKRREPO:latest
+

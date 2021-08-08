@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+AWSID=`aws sts get-caller-identity --query Account --output text`
+AWSRGN=us-west-1
+
+aws ecr get-login-password \
+    --region $AWSRGN \
+| docker login \
+    --username AWS \
+    --password-stdin $AWSID.dkr.ecr.$AWSRGN.amazonaws.com

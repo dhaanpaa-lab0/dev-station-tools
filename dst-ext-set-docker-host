@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+DOCKER_HOST=ssh://denadmin@den-dci-ext.den-apps.net
+export DOCKER_HOST
+

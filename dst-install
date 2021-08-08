@@ -24,3 +24,13 @@ installtodevbin fba-create-dotnet-app
 installtodevbin dst-install-rvm
 installtodevbin fba-create-dotnet-api
 installtodevbin dst-copy-ssh-key
+installtodevbin dst-int-set-docker-host
+installtodevbin dst-ext-set-docker-host
+installtodevbin dst-install-aws-cli
+installtodevbin aer-get-repositories
+installtodevbin aer-create-repository
+installtodevbin aer-delete-repository
+installtodevbin aer-docker-login
+installtodevbin aer-docker-tag
+installtodevbin aer-docker-push
+installtodevbin aer-docker-build

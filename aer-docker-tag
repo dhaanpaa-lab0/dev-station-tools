@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+DKRREPO=$1
+docker tag $DKRREPO:latest 298193180533.dkr.ecr.us-east-1.amazonaws.com/$DKRREPO:latest

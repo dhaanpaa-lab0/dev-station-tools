@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+if [ -f /usr/sbin/installer ]; then
+  mkdir -pv ~/tmp
+  cd ~/tmp
+  F=https://awscli.amazonaws.com/AWSCLIV2.pkg
+  wget $F 
+  sudo installer -verbose -pkg "AWSCLIV2.pkg" -target /
+fi
+
+if [ -f /etc/lsb-release ]; then
+  mkdir -pv ~/tmp
+  cd ~/tmp
+  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+  unzip awscliv2.zip
+  sudo ./aws/install
+fi
