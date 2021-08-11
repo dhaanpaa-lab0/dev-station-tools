@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 AWSID=`aws sts get-caller-identity --query Account --output text`
-AWSRGN=us-west-1
+AWSRGN=us-east-1
 
 aws ecr get-login-password \
     --region $AWSRGN \

@@ -40,3 +40,4 @@ installtodevbin aws-list-repos
 installtodevbin aws-list-repourls
 installtodevbin aws-pull-image
 installtodevbin aws-push-image
+installtodevbin idf-create-dockerfile

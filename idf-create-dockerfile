@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+DOCKERFILEPATH=~/src-docker/$1
+mkdir -pv $DOCKERFILEPATH
+touch $DOCKERFILEPATH/Dockerfile
+cd $DOCKERFILEPATH
+git init
+git add -A .
+git commit -a -m "Initial Setup"
+

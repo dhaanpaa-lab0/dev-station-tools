@@ -7,9 +7,9 @@ cd $APPSLNNAME
 dotnet new sln 
 dotnet new web -n $APPPROJ.Web -f $APPFW
 dotnet sln add $APPPROJ.Web
-dotnet new classlib -n $APPPROJ.Models
+dotnet new classlib -n $APPPROJ.Models -f $APPFW
 dotnet sln add $APPPROJ.Models
-dotnet new classlib -n $APPPROJ.DataAccess
+dotnet new classlib -n $APPPROJ.DataAccess -f $APPFW
 dotnet sln add $APPPROJ.DataAccess
 git init
 dst-create-gitignore visualstudio,visualstudiocode,rider+all,node,webstorm+all
