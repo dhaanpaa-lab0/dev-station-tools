@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+if [ -f /usr/local/etc/mongod.conf ]; then
+  mongod --config /usr/local/etc/mongod.conf --fork
+fi
+
+if [ -f /opt/homebrew/etc/mongod.conf ]; then
+  mongod --config /opt/homebrew/etc/mongod.conf --fork
+fi
+

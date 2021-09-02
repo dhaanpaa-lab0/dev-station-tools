@@ -13,7 +13,6 @@ fi
 
 mvn archetype:generate -DgroupId=$G_ID \
 -DartifactId=$A_ID \
--DarchetypeArtifactId=maven-archetype-webapp \
+-DarchetypeArtifactId=maven-archetype-quickstart \
 -DinteractiveMode=false \
 -DarchetypeVersion=1.4
-

@@ -41,3 +41,6 @@ installtodevbin aws-list-repourls
 installtodevbin aws-pull-image
 installtodevbin aws-push-image
 installtodevbin idf-create-dockerfile
+installtodevbin dst-install-mongodb-brew
+installtodevbin dst-start-mongodb-brew
+installtodevbin jad-create-app
