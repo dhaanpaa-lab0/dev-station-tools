@@ -10,6 +10,8 @@ if [ -z "$A_ID" ]; then
   echo "Must Specify Artifact Id in form of 'examplewebapp'"
   exit 1
 fi
+mkdir -pv ~/jva-src/jwd
+cd ~/jva-src/jwd
 
 mvn archetype:generate -DgroupId=$G_ID \
 -DartifactId=$A_ID \

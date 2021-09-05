@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+cd ~/jde/tomcat
+./bin/shutdown.sh
+

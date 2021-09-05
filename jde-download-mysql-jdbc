@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+mkdir -pv ~/jde/lib
+cd ~/jde/lib
+wget https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-8.0.26.tar.gz
+tar xzvf mysql-connector-java-8.0.26.tar.gz
+

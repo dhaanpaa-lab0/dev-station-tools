@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+mkdir -pv ~/jva-src
+mkdir -pv ~/jva-src/jwd
+mkdir -pv ~/jva-src/jad
+

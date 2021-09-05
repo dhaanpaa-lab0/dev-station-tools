@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+mkdir -pv ~/jde
+cd ~/jde
+wget https://mirrors.gigenet.com/apache/tomcat/tomcat-9/v9.0.52/bin/apache-tomcat-9.0.52.tar.gz
+tar xzvf apache-tomcat-9.0.52.tar.gz
+ln -s ~/jde/apache-tomcat-9.0.52 tomcat
+

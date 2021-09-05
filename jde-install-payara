@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+mkdir -pv ~/jde
+cd ~/jde
+wget 'https://info.payara.fish/cs/c/?cta_guid=b9609f35-f630-492f-b3c0-238fc55f489b&signature=AAH58kGgTCCt36Z4QuJvE4jU8qShHvxDLw&placement_guid=7cca6202-06a3-4c29-aee0-ca58af60528a&click=a96a5134-219f-4c7a-a3c2-bd01f8ab3732&hsutk=c03cb42a66c38525411b778685e0de5b&canon=https%3A%2F%2Fwww.payara.fish%2Fdownloads%2Fpayara-platform-community-edition%2F&utm_referrer=https%3A%2F%2Fwww.payara.fish%2Fproducts%2Fpayara-platform-community%2F&portal_id=334594&redirect_url=APefjpGtgUHZiU1etkoA1jesbUcnhVUfrM0g-Mh-NhmW_orG8YvrsmIwyooynSqhpCFMpb43b2BL6mFpJyoomdpRgMzVpyGEbCFazSZaS5hp5kGPi2xEB1oQn6NBfClsPemDQ5bf0iZss_cliQJEZy1a7-2-VPgSGtHMJziune2SFVAIDu9L2RVwJB0GgbhxgyB0kNa5RbO__xbd-orkQd28YD2SHBdfVM_wDdYXfhlJNx_oJyzvulfjfpBmOTN6BlRqBygImCqcdRzfkJCyEBMwWI_9EQZqF4bvOiZdj2e9r78hkzsMOg64fJ8ndqW4F3-0sp8R2aMzmN61JSgd__EoeFF_ZNwLZA&__hstc=229474563.c03cb42a66c38525411b778685e0de5b.1630604296645.1630604296645.1630604296645.1&__hssc=229474563.1.1630604296646&__hsfp=3105977984' -O payara.zip
+
+unzip payara.zip

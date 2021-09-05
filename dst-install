@@ -44,3 +44,14 @@ installtodevbin idf-create-dockerfile
 installtodevbin dst-install-mongodb-brew
 installtodevbin dst-start-mongodb-brew
 installtodevbin jad-create-app
+installtodevbin jde-install-tomcat
+installtodevbin jde-install-payara
+installtodevbin jde-install-wildfly
+installtodevbin jde-setup
+installtodevbin jva-dev-workspaces-setup
+installtodevbin jde-tomcat-start
+installtodevbin jde-tomcat-stop
+installtodevbin jde-tomcat-edit-users
+installtodevbin jde-tomcat-edit-conf
+installtodevbin jde-tomcat-copy-to-lib
+installtodevbin jde-download-mysql-jdbc

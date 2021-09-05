@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+mkdir -pv ~/jde
+cd ~/jde
+wget https://download.jboss.org/wildfly/24.0.1.Final/wildfly-24.0.1.Final.zip
+unzip wildfly-24.0.1.Final.zip
+ln -s ~/jde/wildfly-24.0.1.Final ~/jde/wildfly
