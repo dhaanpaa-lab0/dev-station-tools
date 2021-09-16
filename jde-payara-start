@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+PBIN=$HOME/jde/payara5/bin
+cd $PBIN
+./asadmin start-domain -d
+

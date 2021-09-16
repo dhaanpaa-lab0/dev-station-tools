@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+G_ID=$1
+A_ID=$2
+if [ -z "$G_ID" ]; then
+  echo "Must Specify Group Id In form of 'com.example'"
+  exit 1
+fi
+
+if [ -z "$A_ID" ]; then
+  echo "Must Specify Artifact Id in form of 'examplewebapp'"
+  exit 1
+fi
+mkdir -pv ~/jva-src/jwd
+cd ~/jva-src/jwd
+
+mvn archetype:generate -DgroupId=$G_ID \
+-DartifactId=$A_ID \
+-DarchetypeArtifactId=maven-archetype-j2ee-simple \
+-DinteractiveMode=false \
+-DarchetypeVersion=1.4
+

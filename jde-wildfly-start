@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+cd $HOME/jde/wildfly/bin
+nohup ./standalone.sh &
+
+
