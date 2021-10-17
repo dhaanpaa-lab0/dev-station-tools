@@ -1,4 +1,11 @@
 #!/usr/bin/env bash
-DOCKER_HOST=ssh://denadmin@den-dci-ext.den-apps.net
+DOCKER_SYS=$1
+if [ -z "$DOCKER_SYS" ]; then
+  echo    "Current Docker Host ...... $DOCKER_HOST"
+  echo -n "Remote Docker Host ....... "
+  read DOCKER_SYS
+fi
+
+DOCKER_HOST=ssh://$DOCKER_SYS
 export DOCKER_HOST
 
