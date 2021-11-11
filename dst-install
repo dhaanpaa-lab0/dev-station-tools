@@ -62,3 +62,4 @@ installtodevbin jde-payara-stop
 installtodevbin jwd-create-jee-app
 installtodevbin njs-run-ts-standard
 installtodevbin njs-run-ts-standard-fix
+installtodevbin jwd-create-quarkus-app

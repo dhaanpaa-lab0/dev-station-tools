@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+G_ID=$1
+A_ID=$2
+if [ -z "$G_ID" ]; then
+  echo "Must Specify Group Id In form of 'com.example'"
+  exit 1
+fi
+
+if [ -z "$A_ID" ]; then
+  echo "Must Specify Artifact Id in form of 'examplewebapp'"
+  exit 1
+fi
+mkdir -pv ~/jva-src/jwd
+cd ~/jva-src/jwd
+
+mvn io.quarkus.platform:quarkus-maven-plugin:2.3.1.Final:create \
+    -DprojectGroupId=$G_ID \
+    -DprojectArtifactId=$A_ID \
+    -DclassName="$G_ID.resources.GreetingResource" \
+    -Dpath="/hello"
+cd $A_ID 
