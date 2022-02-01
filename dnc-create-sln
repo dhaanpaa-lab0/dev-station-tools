@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+mkdir -v $1
+cd $1
+dotnet new sln

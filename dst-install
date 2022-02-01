@@ -63,3 +63,5 @@ installtodevbin jwd-create-jee-app
 installtodevbin njs-run-ts-standard
 installtodevbin njs-run-ts-standard-fix
 installtodevbin jwd-create-quarkus-app
+installtodevbin dnc-create-sln
+installtodevbin dnc-create-fsharp-console

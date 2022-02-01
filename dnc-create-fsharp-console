@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+if [ ! -f *.sln ]; then
+  echo "Must be run in solution directory"
+  exit 1
+fi
+
+PROJ_NAME=$1
+
+if [ -z "$PROJ_NAME" ]; then
+  echo "Must Specifiy Project Name"
+  exit 1
+fi
+
+dotnet new console -lang f# -n $PROJ_NAME
