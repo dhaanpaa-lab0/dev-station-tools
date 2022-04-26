@@ -65,3 +65,4 @@ installtodevbin njs-run-ts-standard-fix
 installtodevbin jwd-create-quarkus-app
 installtodevbin dnc-create-sln
 installtodevbin dnc-create-fsharp-console
+installtodevbin dst-create-php
